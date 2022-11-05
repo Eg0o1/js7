@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 16px;
+    color: hsl(219, 12%, 42%);
+}
+body{
+    min-height: 100vh;
+    background-color: hsl(205, 33%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+.container{
+    background-color: #fff;
+    padding: 20px;
+    width: 700px;
+}
+.container header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.not{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+#mark-all{
+    color:  hsl(219, 12%, 42%);
+    cursor: pointer;
+}
+#mark-all:hover{
+    color: black;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.unread-notification{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 15px;
+}
+.unread-notification img{
+    width: 50px;
+    height: 50px;
+}
+.time{
+    margin-top: 10px;
+}
+.name{
+    color: black;
+}
+.massage{
+    border: 1px solid hsl(205, 33%, 90%);
+    padding: 10px;
+    width: 550px;
+    margin: 10px 0 0 65px;
+    cursor: pointer;
+}
+.massage:hover{
+    background-color: hsl(211, 68%, 94%);
+}
+.specific{
+    background-color: hsl(211, 68%, 94%);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#notification-num{
+    background-color: hsl(219, 85%, 26%);
+    width: 35px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: #fff;
+}
+.specific p:first-of-type:after{
+content: "";
+display: inline-block;
+margin-left: 5px;
+
+background-color: red;
+width: 12px;
+height: 12px;
+border-radius: 50%;
+}
+.unread-kim{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 15px; */
+}
+
+.kim{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.kim img 
+{
+    width: 50px;
+    height: 50px;
+}
+.chess{
+    width: 50px;
+}
+
+@media(max-width:768px)
+{
+    body{
+        background-color: #fff;
+    }
+    .container{
+        width: 420px;
+    }
+
+    .massage{
+        width: 250px;
+    }
+
+
+}
